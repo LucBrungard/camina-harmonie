@@ -19,8 +19,8 @@
             height="200"
             cover
             >
-            <v-card-title class="text-white" v-text="card.title"></v-card-title>
-            <v-card-subtitle class="text-white" v-text="card.subtitle"></v-card-subtitle>
+            <v-card-title class="text-white" text="card.title"></v-card-title>
+            <v-card-subtitle class="text-white" text="card.subtitle"></v-card-subtitle>
             </v-img>
         </v-card>
           
@@ -41,20 +41,22 @@
   </v-card>
 </template>
 <script lang="ts">
+  import camille from './camille.jpg'
+  import jeanJacques from './jean-jacques.jpeg'
   export default {
     data: () => ({
       cards: [
         { 
             title: 'Camille THIOLLIER',
             subtitle:'Directrice musicale', 
-            src: "/src/assets/camille.jpg", 
+            src: camille, 
             mail:'c.thiollier@laposte.net',
             flex: 6 
         },
         { 
             title: 'Jean-Jacques MILLOT', 
             subtitle:'Président', 
-            src: "/src/assets/jean-jacques.jpeg", 
+            src: jeanJacques, 
             mail: 'jjmillot@yahoo.fr',
             flex: 6 
         },
