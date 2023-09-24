@@ -14,13 +14,13 @@
         <v-card :href="`mailto:${card.mail}`">
             <v-img
             :src="card.src"
-            class="align-end"
+            class="align-end text-white"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="200"
             cover
             >
-            <v-card-title class="text-white" text="card.title"></v-card-title>
-            <v-card-subtitle class="text-white" text="card.subtitle"></v-card-subtitle>
+              <v-card-title class="text-white">{{ card.title }}</v-card-title>
+              <v-card-subtitle class="text-white">{{ card.subtitle }}</v-card-subtitle>
             </v-img>
         </v-card>
           
