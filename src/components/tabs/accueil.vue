@@ -1,27 +1,29 @@
 <template>
     <v-timeline align="start">
-      <v-timeline-item>
-        <template v-slot:opposite>
-          1950
-        </template>
-        <div>
-          <div class="text-h6">Création de l'orchestre</div>
-          <p>
-            Blablabla création de l'orchestre
-          </p>
-        </div>
-      </v-timeline-item>
-  
-      <v-timeline-item>
-        <template v-slot:opposite>
-          2022
-        </template>
-        <div>
-          <div class="text-h6">Reprise de l'orchestre par Camille THIOLLIER</div>
-          <p>
-            La nouvelle directrice musicale, Camille THIOLLIER, prend ses fonctions
-          </p>
-        </div>
+      <v-timeline-item 
+        v-for="event in historique"
+        :key="event.date">
+        <v-card>
+          <v-img
+            v-if="event.image !== ''"
+            :src="event.image"
+            height="200px"
+            cover
+          ></v-img>
+          <v-card-title>{{ event.titre }}</v-card-title>
+          <v-card-subtitle>{{ event.date }}</v-card-subtitle>
+          <v-card-text>{{ event.text }}</v-card-text>
+        </v-card>
       </v-timeline-item>
     </v-timeline>
   </template>
+
+<script lang="ts">
+  import historique from '@/assets/historique.json'
+
+  export default {
+    data: () => ({
+      historique: historique as unknown as {[key: string]: {[key: string]: string}}
+    })
+  }
+</script>
