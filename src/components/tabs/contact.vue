@@ -50,14 +50,14 @@
             title: 'Camille THIOLLIER',
             subtitle:'Directrice musicale', 
             src: camille, 
-            mail:'c.thiollier@laposte.net',
+            mail:'prenom.nom@fake.com',
             flex: 6 
         },
         { 
             title: 'Jean-Jacques MILLOT', 
             subtitle:'Président', 
             src: jeanJacques, 
-            mail: 'jjmillot@yahoo.fr',
+            mail: 'prenom.nom@fake.com',
             flex: 6 
         },
       ],

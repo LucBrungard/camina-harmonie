@@ -23,7 +23,7 @@
 
   export default {
     data: () => ({
-      historique: historique as unknown as {[key: string]: {[key: string]: string}}
+      historique: historique
     })
   }
 </script>
