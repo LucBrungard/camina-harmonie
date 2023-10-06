@@ -6,5 +6,21 @@
         "ville": "Metz-Magny",
         "adresse": "17 rue des étangs",
         "date": "28 janvier 2024"
+    },
+    {
+        "titre": "Concert du nouvel an",
+        "description": "Un concert sur le thème des jeux olympiques.",
+        "affiche": "1.jpg",
+        "ville": "Metz-Magny",
+        "adresse": "17 rue des étangs",
+        "date": "28 janvier 2024"
+    },
+    {
+        "titre": "Concert du nouvel an",
+        "description": "Un concert sur le thème des jeux olympiques.",
+        "affiche": "1.jpg",
+        "ville": "Metz-Magny",
+        "adresse": "17 rue des étangs",
+        "date": "28 janvier 2024"
     }
 ]

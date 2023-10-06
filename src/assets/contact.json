@@ -1,0 +1,14 @@
+[
+    {
+        "titre": "Camille THIOLLIER",
+        "soustitre": "Directrice musicale",
+        "image": "camille.jpg",
+        "mail": "prenom.nom@fake.com"
+    },
+    {
+        "titre": "Jean-Jacques MILLOT",
+        "soustitre": "Président",
+        "image": "jean-jacques.jpeg",
+        "mail": "prenom.nom@fake.com"
+    }
+]

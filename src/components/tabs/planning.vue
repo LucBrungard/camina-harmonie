@@ -1,14 +1,17 @@
 <template>
     <v-card
         max-width="500"
-        class="mx-auto">
+        class="mx-auto my-5 myCard"
+        variant="elevated"
+        color="background"
+        elevation="10"
+        border
+        v-for="concert in concerts"
+        :key="concert.date">
         <v-container>
-        <v-row
-            v-for="concert in concerts"
-            :key="concert.date">
+        <v-row>
             <v-col>
-                <v-card
-                    height="300">
+                <v-card height="300">
                     <v-card-title>{{ concert.titre }}</v-card-title>
                     <v-card-subtitle>Le {{ concert.date }}, à {{ concert.ville }}</v-card-subtitle>
 
@@ -43,3 +46,9 @@
         })
     }
 </script>
+
+<style>
+/* .myCard {
+    border: 1px solid rgb(var(--v-theme-accent));
+} */
+</style>
