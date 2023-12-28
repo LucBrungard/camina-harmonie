@@ -6,6 +6,7 @@
     >
       <v-tab value="accueil">Présentation de l'orchestre</v-tab>
       <v-tab value="planning">Concerts à venir</v-tab>
+      <v-tab value="rejoindre">Nous rejoindre</v-tab>
       <v-tab value="contact">Nous trouver</v-tab>
     </v-tabs>
 
@@ -19,6 +20,10 @@
           <Planning />
         </v-window-item>
 
+        <v-window-item value="rejoindre">
+          <Rejoindre />
+        </v-window-item>
+
         <v-window-item value="contact">
           <Contact />
         </v-window-item>
@@ -28,14 +33,15 @@
 </template>
 
 <script lang="ts">
-  import Accueil from './tabs/accueil.vue'
-  import Contact from './tabs/contact.vue'
-  import Planning from './tabs/planning.vue'
+  import Accueil from './tabs/Accueil.vue'
+  import Contact from './tabs/Contact.vue'
+  import Planning from './tabs/Planning.vue'
+  import Rejoindre from './tabs/Rejoindre.vue';
 
   export default {
     data: () => ({
         tab: null,
     }),
-    components: { Accueil, Planning, Contact }
+    components: { Accueil, Planning, Contact, Rejoindre }
 }
 </script>

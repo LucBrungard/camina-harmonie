@@ -30,16 +30,9 @@
 
 <script lang="ts">
   import historique from '@/assets/historique.json'
+  import { updateImagePropertiesList } from '../../utils';
 
-  const imgFolder = `${import.meta.env.BASE_URL}/historique`;
-
-  for (let hist of historique) {
-    Object.defineProperty(hist, 'placeholder', {
-      value: `${imgFolder}/placeholder/${hist.image}`,
-      writable: false,
-    });
-    hist.image = `${imgFolder}/${hist.image}`
-  }
+  updateImagePropertiesList(historique, 'historique')
 
   export default {
     data: () => ({
