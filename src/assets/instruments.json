@@ -1,0 +1,63 @@
+[
+    {
+        "titre": "Les clarinettes",
+        "description": "",
+        "enfants": [
+            {
+                "titre": "La clarinette",
+                "description": "",
+                "images": [
+                    "clarinette.png"
+                ]
+            },
+            {
+                "titre": "La clarinette basse",
+                "description": "",
+                "images": [
+                    "clarinette_basse.jpeg"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "La flûte traversière",
+        "description": "",
+        "images": [
+            "flute_traversiere.png"
+        ]
+    },
+    {
+        "titre": "Les saxophones",
+        "description": "",
+        "enfants": [
+            {
+                "titre": "Le saxophone soprano",
+                "description": "",
+                "images": [
+                    "sax_soprano.png"
+                ]
+            },
+            {
+                "titre": "Le saxophone alto",
+                "description": "",
+                "images": [
+                    "sax_alto.webp"
+                ]
+            },
+            {
+                "titre": "Le saxophone ténor",
+                "description": "",
+                "images": [
+                    "sax_tenor.jpg"
+                ]
+            },
+            {
+                "titre": "Le saxophone baryton",
+                "description": "",
+                "images": [
+                    "sax_baryton.jpg"
+                ]
+            }
+        ]
+    }
+]
